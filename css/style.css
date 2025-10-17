@@ -15,6 +15,11 @@
   --neutral-color-15: #d9d9d9;
   --gray-color-15: #d9d9d9;
   --gray-color-45: #8c8c8c;
+
+  /* Fontes */
+  --main-font-family: "Montserrat";
+  --weight-bold: 700;
+  --weight-regular: 400;
 }
 
 @font-face {
@@ -31,4 +36,16 @@
   font-weight: 700;
   font-display: swap;
   font-style: normal;
+}
+
+h2 {
+  font-family: var(--main-font-family);
+  font-weight: var(--weight-bold);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-family: var(--main-font-family);
+  font-weight: var(--weight-regular);
 }
