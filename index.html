@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <a href="#" class="home-link">
+      <a class="home-link">
         <img
           src="./img/Header e rodapés/Símbolo_white.png"
           alt=""
@@ -21,12 +21,16 @@
         />
       </a>
       <div>
-        <a href="#"
-          ><img
+        <!-- Cria dois elementos irmãos que serão conectados pelo css -->
+        <label for="menu" class="menu-link">
+          <img
             src="./img/Header e rodapés/menu.svg"
             alt=""
             title="Link para abrir o menu"
-        /></a>
+          />
+        </label>
+        <input type="checkbox" name="" id="menu" hidden />
+
         <nav>
           <ul>
             <li>
