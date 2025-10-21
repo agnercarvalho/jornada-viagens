@@ -13,6 +13,19 @@
   width: 100%;
   background-image: url(../img/Mobile/Homepage/Banner\ homepage.png);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    background-image: url(../img/Tablet/Homepage/Banner\ tablet.png);
+    height: 620px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    background-image: url(../img/Desktop/Homepage/Banner.png);
+    height: 620px;
+  }
 }
