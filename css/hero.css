@@ -7,12 +7,38 @@
 .hero h2 {
   padding: 88px 24px;
   text-align: center;
+  font-weight: var(--weight-regular);
+  font-size: 20px;
+  line-height: 32px;
 }
 .hero-img {
   height: 400px;
   width: 100%;
   background-image: url(../img/Mobile/Homepage/Banner\ homepage.png);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    background-image: url(../img/Tablet/Homepage/Banner\ tablet.png);
+    height: 620px;
+  }
+  .hero h2 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+  .hero h2 {
+    padding: 88px 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    background-image: url(../img/Desktop/Homepage/Banner.png);
+    height: 620px;
+  }
+  .hero h2 {
+    padding: 88px 160px;
+  }
 }
