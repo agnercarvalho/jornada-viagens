@@ -13,20 +13,30 @@
   </head>
   <body>
     <header>
-      <a href="#" class="home-link">
+      <a class="home-link">
         <img
+          class="logo-mobile"
           src="./img/Header e rodapés/Símbolo_white.png"
           alt=""
           title="Voltar para a página inicial"
         />
+        <img
+          class="logo-desktop"
+          src="./img/Header e rodapés/Logo-branco.png"
+          alt="Logotipo do Jornada Viagens"
+        />
       </a>
       <div>
-        <a href="#"
-          ><img
+        <!-- Cria dois elementos irmãos que serão conectados pelo css -->
+        <label for="menu" class="menu-link">
+          <img
             src="./img/Header e rodapés/menu.svg"
             alt=""
             title="Link para abrir o menu"
-        /></a>
+          />
+        </label>
+        <input type="checkbox" name="" id="menu" hidden />
+
         <nav>
           <ul>
             <li>
