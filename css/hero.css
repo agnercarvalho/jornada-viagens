@@ -1,0 +1,18 @@
+.hero {
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+}
+.hero h2 {
+  padding: 88px 24px;
+  text-align: center;
+}
+.hero-img {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/Mobile/Homepage/Banner\ homepage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
