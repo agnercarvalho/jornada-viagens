@@ -11,6 +11,7 @@ header a {
   color: var(--color-white);
   text-decoration: none;
   font-family: var(--main-font-family);
+  font-size: 1rem;
 }
 header a:hover {
   text-decoration: underline;
@@ -19,9 +20,12 @@ header a:hover {
 .home-link {
   display: inline-block;
 }
-.home-link img {
+.logo-mobile {
   width: 64px;
   height: 64px;
+}
+.logo-desktop {
+  display: none;
 }
 .menu-link {
   padding: 16px 24px;
@@ -47,4 +51,35 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+@media screen and (min-width: 1020px) {
+  header {
+    padding: 37px 120px;
+  }
+  .menu-link {
+    display: none;
+  }
+  header nav {
+    display: block;
+    position: static;
+    padding: 0;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 40px;
+  }
+  header a {
+    font-size: 1.5rem;
+  }
+  header a:hover {
+    color: var(--primary-color);
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    height: 64px;
+  }
 }
